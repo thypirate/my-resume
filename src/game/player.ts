@@ -74,8 +74,8 @@ export class Player {
   private async loadSprites() {
     try {
       const [idleTex, walkTex] = await Promise.all([
-        PIXI.Assets.load<PIXI.Texture>("/characters/idle.png"),
-        PIXI.Assets.load<PIXI.Texture>("/characters/walk.png"),
+        PIXI.Assets.load<PIXI.Texture>("characters/idle.png"),
+        PIXI.Assets.load<PIXI.Texture>("characters/walk.png"),
       ]);
 
       for (let row = 0; row < ROWS; row++) {
