@@ -14,33 +14,43 @@ export function HUD() {
   if (isOverlayOpen) return null;
 
   return (
-    <div className="hud" aria-hidden="true">
-      <div className="hud-controls">
-        <span className="hud-key">WASD</span>
-        <span className="hud-sep">or</span>
-        <span className="hud-key">Arrow Keys</span>
-        <span className="hud-label">to move</span>
+    <>
+      <a
+        className="hud-resume"
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
+        target="_blank"
+        rel="noopener"
+      >
+        Résumé (PDF) ↗
+      </a>
+      <div className="hud" aria-hidden="true">
+        <div className="hud-controls">
+          <span className="hud-key">WASD</span>
+          <span className="hud-sep">or</span>
+          <span className="hud-key">Arrow Keys</span>
+          <span className="hud-label">to move</span>
+          {nearZone && (
+            <>
+              <span className="hud-div" />
+              <span className="hud-key" style={{ color: ZONE_COLOR[nearZone] }}>
+                E
+              </span>
+              <span className="hud-label">to explore</span>
+            </>
+          )}
+        </div>
+
         {nearZone && (
-          <>
-            <span className="hud-div" />
-            <span className="hud-key" style={{ color: ZONE_COLOR[nearZone] }}>
-              E
-            </span>
-            <span className="hud-label">to explore</span>
-          </>
+          <div
+            className="hud-zone-badge"
+            style={{
+              borderColor: ZONE_COLOR[nearZone],
+            }}
+          >
+            {nearZone.charAt(0).toUpperCase() + nearZone.slice(1)}
+          </div>
         )}
       </div>
-
-      {nearZone && (
-        <div
-          className="hud-zone-badge"
-          style={{
-            borderColor: ZONE_COLOR[nearZone],
-          }}
-        >
-          {nearZone.charAt(0).toUpperCase() + nearZone.slice(1)}
-        </div>
-      )}
-    </div>
+    </>
   );
 }

@@ -1,9 +1,0 @@
-.vscode/**
-.vscode-test/**
-webview-ui/**
-server/**
-node_modules/**
-src/**
-!dist/**
-**/*.map
-**/*.ts

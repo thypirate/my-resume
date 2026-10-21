@@ -102,6 +102,28 @@ body,
   margin: 0 4px;
 }
 
+.hud-resume {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 21;
+  padding: 6px 14px;
+  background: rgba(15, 15, 35, 0.85);
+  color: var(--c-text);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--c-player);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.hud-resume:hover,
+.hud-resume:focus-visible {
+  background: var(--c-player);
+  color: var(--c-bg);
+}
+
 .hud-zone-badge {
   position: absolute;
   top: 20px;

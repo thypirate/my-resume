@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "resume": "node scripts/build-resume.ts"
   },
   "dependencies": {
     "pixi.js": "^7.4.2",

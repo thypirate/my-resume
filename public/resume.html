@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ricardo Barros — Résumé</title>
+<style>
+  body { font: 10.5pt/1.45 system-ui, -apple-system, "Segoe UI", Arial, sans-serif; color: #111; max-width: 780px; margin: 24px auto; padding: 0 16px; }
+  h1 { font-size: 20pt; margin: 0; }
+  h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: .06em; border-bottom: 1px solid #999; padding-bottom: 2px; margin: 18px 0 8px; }
+  h3 { font-size: 10.5pt; margin: 0; }
+  p { margin: 2px 0 0; }
+  a { color: #0a4fa3; }
+  .contact, .meta, .tech { color: #444; }
+  .tech { font-size: 9.5pt; }
+  .entry { margin-bottom: 10px; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  ul { margin: 0; padding-left: 18px; }
+  @page { margin: 14mm; }
+  @media print { body { margin: 0; padding: 0; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ricardo Barros</h1>
+  <p>Software Developer — 5+ years building reliable, high-performance web applications.</p>
+  <p class="contact"><a href="https://thypirate.github.io/my-resume/">Interactive résumé</a> · <a href="https://github.com/thypirate">github.com/thypirate</a></p>
+</header>
+
+<h2>Experience</h2>
+<div class="entry">
+  <div class="row"><h3>Lead Developer &amp; Front End Developer — NiW IT Services and Consulting — Portugal</h3><span class="meta">2023 – Present</span></div>
+  <p>Responsible for international project technical overview and architecture design. Led website development and optimization, managed project support and REST integrations.</p>
+  <p class="tech">Nuxt 3, Vue.js, TypeScript, Sass, NestJS, GitHub, GitLab</p>
+</div>
+<div class="entry">
+  <div class="row"><h3>Full Stack Developer — Jamhubsolutions — Portugal</h3><span class="meta">2021 – 2022</span></div>
+  <p>Maintained and optimized legacy web platform end-to-end. Handled front-end UI modernization alongside back-end Java/Spring services and REST integrations.</p>
+  <p class="tech">jQuery, JSP, Java, Spring Boot, MySQL, GulpJS, ReactJS, GitLab</p>
+</div>
+<div class="entry">
+  <div class="row"><h3>Information Systems Assistant — Unitel T+ — Cabo Verde</h3><span class="meta">2018 – 2019</span></div>
+  <p>Responsible for test planning and execution across manual and automated test suites. Developed internal tooling to support QA workflows.</p>
+  <p class="tech">Selenium, C#, SpecFlow</p>
+</div>
+<div class="entry">
+  <div class="row"><h3>Intern — Prime Consulting — Cabo Verde</h3><span class="meta">2016 – 2017</span></div>
+  <p>Designed layouts and developed websites for client projects, maintaining and extending existing codebases.</p>
+  <p class="tech">HTML, CSS, JavaScript, jQuery, GulpJS, CoffeeScript, Bootstrap 3, PHP</p>
+</div>
+
+<h2>Projects</h2>
+<div class="entry">
+  <h3>Cabo Verde Biodiversity API</h3>
+  <p>An open API aggregating biodiversity data for Cabo Verde: GBIF, iNaturalist, Wikipedia and protected-area data merged with national legal lists and NGO reports extracted from PDFs, every figure traceable to its source. Redis read-through cache with stale-if-error fallback, graceful degradation when upstreams fail, rate limiting, HATEOAS links.</p>
+  <p class="tech">Python, FastAPI, Redis, Docker, Railway · <a href="https://nosbiodiv.cv/docs">nosbiodiv.cv/docs</a> · <a href="https://github.com/thypirate/biodiv-cv">github.com/thypirate/biodiv-cv</a></p>
+</div>
+<div class="entry">
+  <h3>Tech Cases</h3>
+  <p>A timeline of legal cases against big tech companies, mostly over privacy, with sources for every case. A Turborepo monorepo: a Hono + SQLite API and a Next.js + Tailwind site, each deployed as its own Docker service.</p>
+  <p class="tech">TypeScript, Next.js, Hono, SQLite, Tailwind, Turborepo · <a href="https://web-production-cf11e.up.railway.app/">web-production-cf11e.up.railway.app</a> · <a href="https://github.com/thypirate/tech-cases">github.com/thypirate/tech-cases</a></p>
+</div>
+<div class="entry">
+  <h3>Interactive Resume</h3>
+  <p>This site! A top-down hub world built with React, PixiJS and TypeScript where each zone reveals a section of the portfolio.</p>
+  <p class="tech">React, PixiJS, TypeScript · <a href="https://thypirate.github.io/my-resume/">thypirate.github.io/my-resume</a> · <a href="https://github.com/thypirate/my-resume">github.com/thypirate/my-resume</a></p>
+</div>
+<div class="entry">
+  <h3>Europe Recycling</h3>
+  <p>An interactive 3D globe visualising municipal waste recycling rates across Europe, built with React, Three.js and react-globe.gl.</p>
+  <p class="tech">React, Three.js, react-globe.gl · <a href="https://github.com/thypirate/europe-recycling">github.com/thypirate/europe-recycling</a></p>
+</div>
+<div class="entry">
+  <h3>Mr. White VScode Extension</h3>
+  <p>A social deduction game in vscode.</p>
+  <p class="tech">React, TypeScript · <a href="https://github.com/thypirate/vsmrwhite">github.com/thypirate/vsmrwhite</a></p>
+</div>
+<div class="entry">
+  <h3>Red Clusters Detector</h3>
+  <p>A Python script that detects red clusters in images using OpenCV and NumPy.</p>
+  <p class="tech">Python, OpenCV, NumPy · <a href="https://github.com/thypirate/red-clusters-detector">github.com/thypirate/red-clusters-detector</a></p>
+</div>
+
+<h2>Education</h2>
+<div class="entry">
+  <div class="row"><h3>Master in Software Engineering — Instituto Superior de Engenharia do Porto</h3><span class="meta">2019 – 2024</span></div>
+  <p class="meta">Portugal</p>
+</div>
+<div class="entry">
+  <div class="row"><h3>Degree in Systems and Computer Engineering — Universidade Jean Piaget</h3><span class="meta">2012 – 2016</span></div>
+  <p class="meta">Cabo Verde</p>
+</div>
+
+<h2>Skills</h2>
+<ul>
+  <li><strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript, React, Next.js, Vue.js, Nuxt, Sass, Tailwind</li>
+  <li><strong>Backend:</strong> Node.js, NestJS, Express.js, Java, Spring Boot, .NET, PHP</li>
+  <li><strong>Databases:</strong> SQL, NoSQL, MySQL</li>
+  <li><strong>DevOps &amp; Tools:</strong> Git, Docker, Linux, Apache, NGINX, GitHub, GitLab</li>
+  <li><strong>Languages:</strong> Portuguese (Fluent), English (Fluent), Spanish (B1), French (A2)</li>
+</ul>
+</body>
+</html>
